@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spinner_item_listener"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtSpin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bahasa"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/title"
+        />
+
+    <Spinner
+        android:id="@+id/Spin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtSpin1"
+        android:entries="@array/language_array"
+        />
+
+    <TextView
+        android:id="@+id/txtSpin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_below="@id/Spin1"
+        android:text="@string/skill"/>
+
+    <Spinner
+        android:id="@+id/Spin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtSpin2"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Spin2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:textSize="30sp"
+        android:layout_below="@id/btnExit"/>
+
+</RelativeLayout>

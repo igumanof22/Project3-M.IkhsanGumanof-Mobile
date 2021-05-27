@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Project3-M.IkhsanGumanof</string>
+    <string name="spinner_item_listener">Spinner Item Listeners</string>
+    <string name="bahasa">Programming Language :</string>
+    <string name="skill">Programming Skill</string>
+    <string name="submit">SUBMIT</string>
+    <string name="time_picker">TIME PICKER</string>
+    <string name="date_picker">DATE PICKER</string>
+    <string name="pilih_waktu">Pilih Waktu</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="next">NEXT</string>
+    <string name="exit">EXIT</string>
+    <string-array name="language_array">
+        <item>Java</item>
+        <item>PHP</item>
+        <item>Ruby</item>
+        <item>Perl</item>
+        <item>Phyton</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+    </string-array>
+</resources>

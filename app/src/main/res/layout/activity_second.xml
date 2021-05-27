@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_tanggal"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"/>
+
+    <DatePicker
+        android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:datePickerMode="spinner"
+        android:layout_below="@id/txtDate"/>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_waktu"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pickDate"/>
+
+    <TimePicker
+        android:id="@+id/pickTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/txtTime"
+        android:timePickerMode="spinner"/>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:text="@string/date_picker"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickTime"/>
+
+    <Button
+        android:id="@+id/btnTime"
+        android:text="@string/time_picker"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</ScrollView>
